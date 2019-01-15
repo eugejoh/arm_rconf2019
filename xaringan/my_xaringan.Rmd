@@ -1,0 +1,125 @@
+---
+title: "my xaringan slides"
+output: 
+  xaringan::moon_reader:
+    nature:
+      highlightStyle: github
+      highlightLines: true
+  
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+options(knitr.table.format = "html")
+library(knitr)
+library(tidyverse)
+library(kableExtra)
+library(DT)
+```
+
+
+# Introduce Yourself!
+
+> My name is Eugene
+
+---
+class: bottom, right
+
+# Change the alignment
+
+to bottom and right
+
+*All the details*
+
+.left[left justified text]
+
+???
+presenter notes
+
+---
+class: middle
+# Insert an image
+
+using markdown notation
+![image of momtocat](http://bit.ly/momtocat)
+
+---
+# Insert another image
+
+using HTML
+
+<img src="http://bit.ly/wiki-toddy" width="15%" align="right" />
+
+---
+# Incremental slides (one line)
+
+Hello 
+--
+my name is Eugene 
+--
+I like sushi 
+
+---
+# Incremental slides (down a line)
+
+Hello
+
+--
+
+my name is Eugene
+
+--
+
+I like sushi
+
+---
+# Two Columns
+
+.pull-left[left side text]
+
+.pull-right[right side text]
+
+---
+# add a table
+
+```{r my_table}
+head(iris) %>% 
+  kable(format = "html") #<<
+```
+
+---
+# add a plot
+.pull-left[
+```{r myplot, fig.retina=3, fig.show = 'hide'}
+iris %>% 
+  ggplot(aes(x=Sepal.Length, y=Sepal.Width, colour = Species)) +
+  geom_point()
+```
+]
+
+.pull-right[
+```{r ref.label = 'myplot', echo=FALSE}
+```
+]
+
+---
+class: middle, inverse
+background-image: url(http://bit.ly/arm-greens)
+
+# Background image
+
+
+---
+class: middle, center, inverse
+background-image: url(http://bit.ly/arm-greens)
+background-size: cover
+
+# Background image 'cover'
+
+
+---
+class: middle, right, inverse
+background-image: url(http://bit.ly/arm-greens)
+background-size: contain
+background-position: center bottom
+
+# background image position

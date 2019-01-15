@@ -1,0 +1,73 @@
+---
+title: "my flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(babynames)
+```
+
+# Page 1
+
+## Column {data-height=650}
+
+
+### Chart A
+
+```{r}
+
+```
+
+## Column {data-height=350}
+
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
+# Page 2
+
+## Column {data-height=500}
+### Chart D
+
+## Column {data-height=500}
+### Chart F
+
+# Page 3
+
+## Column 1 {data-height=500, .tabset}
+
+### Chart G
+
+### Chart H
+
+
+# Page 4
+
+## side bar {.sidebar}
+
+```{r}
+"something here"
+```
+
+## Column 1 {data-height=250}
+```{r}
+"something else"
+```
+
+## Column 2 {data-height=750}
+```{r}
+"another thing"
+```
