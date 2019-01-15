@@ -1,4 +1,4 @@
-# arm_rconf2019
+# rconf2019 Workshop Repository
 
 repository for advanced R markdown workshop @ rstudio::rconf2019
 
