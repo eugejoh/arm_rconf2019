@@ -1,0 +1,7 @@
+# Literature
+
+Here is a review of existing methods.
+
+
+## Reference to the previous chapter 
+Look at \@ref(fig:nice-fig)
