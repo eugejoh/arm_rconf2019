@@ -24,7 +24,7 @@ library(babynames)
 
 ## Column {data-height=350}
 
-
+github.com/rstudioeducation
 ### Chart B
 
 ```{r}
